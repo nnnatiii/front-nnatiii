@@ -1,76 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Silkscreen&display=swap');
+  @import url();
+  /*
+   esto es un comentario 
+   esto es un otro comentario
+   */
+   /*
+   selector HTML {
+    atributo valor;
+   }
+   */
+   
+
+
+   /*todos los h1 del documento*/
+   /*selector por tipo(etiqueta)*/
+h1 {
+   color: blue;
+}
 
 /*
- esto es un comentario 
- esto es un otro comentario
- */
- /*
- selector HTML {
-  atributo valor;
- }
- */
- 
+selector {
+    atributo valor;
+}
+*/
 
-
- /*todos los h1 del documento*/
- /*selector por tipo(etiqueta)*/
-h1 {
-    color:blue ;
-} 
-
- h2 { 
-  color: rgb(230, 47, 205);
-  font-size: 45px;
+h2 {
+    color:blueviolet;
+    font-size: 45px;
 }
 p {
-  color:brown;
+    color:brown;
 }
 
 /*selector por ID*/
 #parrafoAzul {
-  color:blue;
-  font-family:'Silkscreen', cursive;
+    color:blue;
 }
 /*selector por clase*/
 .claseParrafoAzul {
-  color: cadetblue;
+    color: cadetblue;
 }
 
 
 .caja {
-  background-color:aqua;
-  /* height: 100px; */
-  font-size: 16px;
+    background-color:aqua;
+    height: 100px;
+    font-size: 16px;
 }
 
 .caja p {
-  color: black;
-}
-.textoitalic {
-    font-size: italic;
-    font-family: 'Roboto', sans-serif;
-}
-
-.textobold {
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-/*fuente externa*/
-* {
-    font-family: 'Montserrat', sans-serif;
-}
-/*colores*/
-/*RGB(red,green,blue)*/
-/*RGB(0,0,0)*/
-/*RGB(100,50,10)*/
-/*RGB(235,255,255*/
-p.color {
-    color: rgb(0, 221, 11);
-
-}
-/*rgb + alpha (0-1)*/
-p.coloralpha {
-    font-size: 50px;
-    color: rgb(5, 175,85);
+    color: black;
 }

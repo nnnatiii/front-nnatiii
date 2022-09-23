@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        a {
+         color: red;
+         text-decoration: none;
+        }
+        ul {
+            list-style-type: circle; /* none | circle | disc (deafault) | decimal */
+        }
+
+        .links {
+
+        }
+
+        /*herencia*/
+        .links li a {
+            color: green;
+        }
+        .texto-color {
+            color: blue;
+        }
+        #texto-color {
+            color: purple;
+        }
+
+        .texto-color-important {
+         color: aqua !important;
+        }
+        /* 
+        important > inline> id > class>
+        */
+        /*selector de atributos*/
+        [href]{
+           /* background-color: blueviolet; */
+            text-decoration: line-through;
+        }
+        [href$="3"]{
+            text-decoration: underline;
+        }
+
+        /*igual a*/
+        [id="galeria"] {
+           background-color: red;
+        }
+        /*inicie con algo*/
+        [id^="re"] {
+            background-color: burlywood;
+        }
+        /*contenga*/
+        [id*="ale"] {
+            font-size: 15px;
+            color: blue;
+            padding: 15px;
+        }
+        /*termine con*/
+        [id$="os"] {
+            background-color: black;
+           color: pink;
+        }       
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul class="links">
+                        <li>
+                            <a href="nosotros">link1</a>
+                        </li>
+                        <Li> 
+                            <a href="link1">link2</a>
+                        </Li>
+                        <li>
+                            <a href="link1">link3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section>
+        <p style="color: red" class="texto-color  texto-color-important"
+        id="#texto-color"
+        >
+          Parrafo
+    </p>
+        </section>
+
+        <section>
+           <fieldset>
+        
+            <legend>oficiales</legend>
+            <form method="post">
+            <input type="file" name="archivo">
+            <button>
+                ENVIAR
+            </button>
+            </form>
+        </fieldset>
+        </section>
+        <section id="nosotros">
+            <h3>nosotros</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa iste assumenda ipsam alias exercitationem qui animi minus eum dolor. Eius distinctio tempora accusantium praesentium temporibus repellendus corrupti eos deserunt sequi?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis necessitatibus neque dolorem laboriosam obcaecati expedita natus laudantium veniam non. Labore maiores nulla nobis repudiandae dolore rem facilis culpa quidem commodi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, odit sunt dolor magnam quidem deleniti molestias facere tenetur praesentium saepe voluptas ut sit qui ullam velit delectus maiores nulla. Quaerat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint sit perferendis esse rem error, sequi obcaecati inventore molestiae ipsa! Autem voluptatibus ipsa velit ea. Rerum nam cupiditate sint quaerat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id earum atque assumenda quidem, labore explicabo dolorum quo similique quis molestiae eligendi quos corporis veritatis vitae expedita blanditiis provident totam.</p>
+
+        </section>
+        <section id="contacto">
+            <h3>contacto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, delectus repellendus. Similique, pariatur ad. Voluptas tenetur tempore fugit iure aliquam. Impedit quae nesciunt minima facere asperiores voluptas id porro? Molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam dolore, vitae odio accusamus et possimus porro sapiente deserunt nobis! Praesentium sit cumque similique id laborum molestias odit nemo dolore?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, nihil non culpa, velit ab veritatis nam quae ratione incidunt illo ea qui accusantium distinctio, doloribus enim. Vitae tempore impedit repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus itaque, asperiores hic accusamus dolores iusto magni corrupti omnis modi error cumque. Voluptatem consequuntur tenetur dicta similique iste laudantium dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellendus iusto! Ea tempora aut perspiciatis, nisi praesentium architecto autem? Saepe ea quibusdam ducimus natus illum quam non deserunt tempore ipsum!</p>
+
+        </section>
+        <section id="galeria">
+            <h3>galeria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi ullam, quis corporis velit nemo minima ut voluptatibus aspernatur eos rerum doloremque, nihil voluptatum aut exercitationem ratione nostrum. Sint, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, praesentium voluptas perferendis distinctio non vero ullam? Praesentium atque iste maiores a quibusdam, vero magni, architecto ipsam porro necessitatibus adipisci quas!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem totam, iste neque dolores eligendi eum perferendis veritatis, vitae quaerat autem sapiente culpa exercitationem sunt quia illum eveniet dolorum corrupti laborum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil obcaecati ratione dolores aperiam ad laboriosam sint commodi magnam, illo, earum nam consequatur quis facilis placeat quia quisquam molestias? Veritatis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit quo sunt cum numquam delectus eum eaque sapiente vero iste quas suscipit, deleniti repellat unde reprehenderit ea sed! Soluta, hic.</p>
+        </section>
+
+        <section id="regaleria">
+            <h3>galeria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi ullam, quis corporis velit nemo minima ut voluptatibus aspernatur eos rerum doloremque, nihil voluptatum aut exercitationem ratione nostrum. Sint, incidunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, praesentium voluptas perferendis distinctio non vero ullam? Praesentium atque iste maiores a quibusdam, vero magni, architecto ipsam porro necessitatibus adipisci quas!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem totam, iste neque dolores eligendi eum perferendis veritatis, vitae quaerat autem sapiente culpa exercitationem sunt quia illum eveniet dolorum corrupti laborum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil obcaecati ratione dolores aperiam ad laboriosam sint commodi magnam, illo, earum nam consequatur quis facilis placeat quia quisquam molestias? Veritatis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit quo sunt cum numquam delectus eum eaque sapiente vero iste quas suscipit, deleniti repellat unde reprehenderit ea sed! Soluta, hic.</p>
+        </section>
+
+
+        </section>
+    </main>
+    
+</body>
+</html>
+<important
