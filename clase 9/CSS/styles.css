@@ -1,0 +1,44 @@
+/*agrego en la primer linea las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*todo en sitio usa google-font*/
+*{
+    font-family: 'Lobster', cursive;
+}
+body {
+    background-color: beige;
+}
+/*
+   creo una clase: 
+   */
+.menu-container {
+    list-style-type: none;
+    background-color: black;
+    
+}
+.menu-container li {
+    display: inline-block;
+    margin: 5px;
+}
+.menu-container li a {
+      text-decoration: none;
+      display: block;
+      height: 50px;
+    /*border: 1px solid blue*/
+      color: white;
+}
+/*
+:hover
+pseudoclases: cuando paso el mouse sobre "algo"
+*/
+.menu-container li a:hover{
+    color: blueviolet;
+    /*background-color:white; */
+    /*redondear el borde*/
+    /*border-radius: 15px; */
+    font-weight: bolder;
+}
+.menu-container li a.active {
+    font-size: 1.2em;
+    color: chocolate;
+}
+    
