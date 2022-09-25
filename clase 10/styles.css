@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*flexbox*/
+.container-flex {
+    flex-direction: row; /*row|column*/
+    border: 1px solid red;
+    display: flex;
+    background-color: beige;
+    justify-content: space-evenly; /*alinea el contenido*/
+    /*height: 400px;*/
+    /*align-items: flex-start; */
+    /*width: 50%;*/
+    flex-wrap: wrap;/*nowrap*/
+}
+.container-item {
+    width: 100px;
+    height: 50px;
+    border: 2px solid yellow;
+    background-color: aqua;
+}
+/*media query: me sirve para cambiar los estilos cuandocambia la resolucion
+@media screen and (max-width:600px) { 
+     .container-flex {
+          flex-direction: column;
+          background-color: blueviolet;
+     }
+     .container-item {
+        font-size: 2em;
+        color: blue;
+     }
+} 
+*/
+section {
+    height: 650px;
+    /*border: 1px solid blue;*/
+    /*margin: 10px;*/
+    display: flex;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center
+}     
+section img {
+    width: 50%;
+    margin: 15px;
+}
+/*estilos para las section*/
+main section:first-child {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+} 
+main section:last-child {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+/*:nth-child(2)*/
+main section:nth-child(2) {
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+/*
+section:nth-child(odd) {
+    background-color:rgb(0, 255, 4);
+}
+section:first-child {
+    background-color: rgb (255, 100, 0) !important;
+}
+*/
+/*:nth-child(3n+1) : TPH*/
+
+/*html*/
+html {
+    scroll-behavior: smooth;
+}
+
+table tr:nth-child(3n+3) {
+    background-color: red;
+}
+/*menu*/
+.menu-container {
+    background-color: #a18cd1;
+    display: flex;
+    padding: 20px;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+    height: 30px;
+
+    position: sticky;
+    top:0;
+}
+.menu-container ul li {
+    display: inline-block;
+  
+}
+.menu-container a {
+    /* display: inline-block; */
+    /* height: 50px; */
+    text-decoration: none;
+}
+.menu-container a:hover {
+    font-size: 1.2em;
+    color: white;
+}
+header img {
+    display: block;
+    height: 650px;
+    width: 100%
+}
+
+.content-text a {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    /*border: 1px solid #c0e6f8;*/
+    border-radius: 20px;
+    line-height: 45px;
+    background: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: fantasy;
+     color: black;
+     text-align: center;
+}
+.content-text a:hover {
+    border: 1px solid blue;
+}
+@media screen and (max-width:1000px) {
+    section {
+        flex-direction: column;
+    }
+    section img {
+        width: 25% ;
+    }
+    .content-text {
+        text-align: center;
+    }
+}
+  
